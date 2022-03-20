@@ -11,38 +11,46 @@ let a9;
 let a10;
 /*level1*/
 let answer1 = prompt(
-  "leve1:What numbers none of whitch are 0 equal the same thing when added or multiplied?"
+  "leve1: What numbers none of which are 0 equal the same thing when added or multiplied?"
 );
 if (answer1 === "123" || answer1 === "321" || answer1 === "213") {
-  a1 = "cerect";
-  alert("cerect");
+  a1 = "correct";
+  alert("correct");
 }
-if (a1 === "cerect") {
+if (a1 === "correct") {
   /*level2*/
-  let answer2 = prompt("Whitch is bigger?");
-  if (answer2 === "Whitch") {
-    a2 = "cerect";
-    alert("cerect");
-    if (a2 === "cerect") {
+  let answer2 = prompt("level2: Which is bigger?");
+  if (answer2 === "Which") {
+    a2 = "correct";
+    alert("correct");
+    if (a2 === "correct") {
       /*level3*/
-      let answer3 = prompt("Do not skip this.");
+      let answer3 = prompt("level3: Do not skip this.");
       if (answer3 === "ok" || "Ok") {
-        a3 = "cerect";
-        alert("cerect");
-        if (a3 === "cerect") {
+        a3 = "correct";
+        alert("correct");
+        if (a3 === "correct") {
           /*level4*/
-          let answer4 = prompt("Pick a number 1-3");
+          let answer4 = prompt("level4: Pick a number 1-3");
           if (answer4 === "a number 1-3") {
-            a4 = "cerect";
-            alert("cerect");
-            if (a4 === "cerect") {
+            a4 = "correct";
+            alert("correct");
+            if (a4 === "correct") {
               /**level5*/
               let answer5 = prompt("Is this this the best game ever?");
               if (answer5 === "yes" || "Yes") {
-                a5 = "cerect";
-                alert("cerect");
-                if (a5 === "cerect") {
+                a5 = "correct";
+                alert("correct");
+                if (a5 === "correct") {
                   /**level6 */
+                  let answer6 = prompt("");
+                  if (answer6 === "") {
+                    a6 = "correct";
+                    alert("correct");
+                    if (a6 === "correct") {
+                      /**level7 */
+                    }
+                  }
                 }
               }
             }
