@@ -9,17 +9,30 @@ let a7;
 let a8;
 let a9;
 let a10;
-let lives = 3;
+let lives = 2;
+
 /*level1*/
 let answer1 = prompt(
-  "leve1: What numbers none of which are 0 equal the same thing when added or multiplied?"
+  "leve1: What three numbers none of which are 0 equal the same thing when added or multiplied?"
 );
 if (answer1 === "123" || answer1 === "321" || answer1 === "213") {
   a1 = "correct";
   alert("correct");
 } else {
   lives--;
+  let answer1r2 = prompt(
+    "leve1 you have " +
+      lives +
+      " live left: What three numbers none of which are 0 equal the same thing when added or multiplied?"
+  );
+  if (answer1r2 === "123" || answer1r2 === "321" || answer1r2 === "213") {
+    a1 = "correct";
+    alert("correct");
+  } else {
+    alert("You lose");
+  }
 }
+
 if (a1 === "correct") {
   /*level2*/
   let answer2 = prompt("level2: Which is bigger?");
