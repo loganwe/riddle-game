@@ -9,6 +9,7 @@ let a7;
 let a8;
 let a9;
 let a10;
+let lives = 3;
 /*level1*/
 let answer1 = prompt(
   "leve1: What numbers none of which are 0 equal the same thing when added or multiplied?"
@@ -16,6 +17,8 @@ let answer1 = prompt(
 if (answer1 === "123" || answer1 === "321" || answer1 === "213") {
   a1 = "correct";
   alert("correct");
+} else {
+  lives--;
 }
 if (a1 === "correct") {
   /*level2*/
