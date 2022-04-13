@@ -18,6 +18,9 @@ function check() {
     return false;
   }
 }
+function reset_life() {
+  let des = Math.floor(Math.random() * 2);
+}
 /*level1*/
 let answer1 = prompt(
   "leve1: What three numbers none of which are 0 equal the same thing when added or multiplied?"
@@ -64,24 +67,46 @@ if (a1 === "correct") {
   }
   if (a2 === "correct") {
     /*level3*/
-    let answer3 = prompt("level3: Do not skip this.");
-    if (answer3 === "ok" || "Ok") {
+    let answer3 = prompt(
+      "level3 you have " + lives + " left: Do not skip this."
+    );
+    if (answer3 === "this") {
       a3 = "correct";
       alert("correct");
-      if (a3 === "correct") {
-        /*level4*/
-        let answer4 = prompt("level4: Pick a number 1-3");
-        if (answer4 === "a number 1-3") {
-          a4 = "correct";
+    } else if (answer3 !== "this") {
+      lives--;
+      check();
+      if (check() === false) {
+        let answer3r2 = prompt(
+          "level3 you have " + lives + " left: Do not skip this."
+        );
+        if (answer3r2 === "this") {
+          a3 = "correct";
           alert("correct");
-          if (a4 === "correct") {
-            /**level5*/
-            let answer5 = prompt("Is this this the best game ever?");
-            if (answer5 === "yes" || "Yes") {
-              a5 = "correct";
-              alert("correct");
-              if (a5 === "correct") {
-                /**level6 *
+        } else {
+          lives--;
+          check();
+        }
+      }
+    }
+    if (a3 === "correct") {
+      /*level4*/
+      let answer4 = prompt("level4 you have " + lives + ": Pick a number 1-3");
+      if (answer4 === "a number 1-3") {
+        a4 = "correct";
+        alert("correct");
+      } else {
+        lives--;
+        check();
+      }
+      if (a4 === "correct") {
+        /**level5*/
+        let answer5 = prompt("Is this this the best game ever?");
+        if (answer5 === "yes" || "Yes") {
+          a5 = "correct";
+          alert("correct");
+          if (a5 === "correct") {
+            /**level6 *
                   let answer6 = prompt("");
                   if (answer6 === "") {
                     a6 = "correct";
@@ -90,8 +115,6 @@ if (a1 === "correct") {
                       **level7 *
                     }
                   }*/
-              }
-            }
           }
         }
       }
