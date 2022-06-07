@@ -22,3 +22,8 @@ function reset_life() {
   let des = Math.floor(Math.random() * 2);
 }
 /*level1*/
+document.getElementById("start").onclick = function () {
+  document.write(
+    '<link href="style.css" rel="stylesheet" /><a href="level1.html">click me</a>'
+  );
+};
